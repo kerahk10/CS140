@@ -1,0 +1,24 @@
+main p {
+    color: red;
+}
+
+p {
+    color:blue
+}
+
+main h1 {
+    color: cadetblue;
+}
+
+main h2 {
+    color: burlywood;
+}
+
+.orange {
+    color: orange;
+}
+
+.bigger {
+    font-size: 15pt;
+    font-weight: bold;
+}

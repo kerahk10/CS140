@@ -1,0 +1,35 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: rgb(23, 26, 28);
+    font-size: 13pt;
+    background-color: rgb(69, 125, 82);
+}
+
+a {
+  color: #702cb0;
+}
+
+#main-heading-block {
+  color: rgb(111, 36, 101);
+}
+
+#firstP {
+    color: black;
+}
+
+footer {
+    color: #702cb0
+}
+
+nav {
+    color: rgba(29, 74, 88, 0.546);
+}
+
+.custom-color {
+  color: rgba(29, 74, 88, 0.546);
+}
+
+span.highlight-word {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}

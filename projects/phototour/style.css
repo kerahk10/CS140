@@ -1,0 +1,54 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(29, 99, 99);
+    background-color: aquamarine;
+    background-image: url('../phototour/photos/background.jpg');
+}
+
+.list {
+    list-style-image: url(../phototour/photos/plane-icon.jpg);
+}
+
+main {
+    background-position:top right;
+    background-repeat: no-repeat;
+    background-image: url(../phototour/photos/flag.png);
+    font-size: larger;
+}
+
+nav a {
+    color: blueviolet;
+    font-size: larger;
+}
+
+.current {
+color:  palevioletred;
+}
+
+#france {
+    height: 500px;
+}
+
+#france2 {
+height: 700px;
+}
+
+#greece {
+    height: 500px;
+}
+
+#italy {
+    height: 500px;
+}
+
+#italy2 {
+    height: 500px;
+}
+
+#switz {
+    height: 500px;
+}
+
+#uk {
+    height: 500px;
+}

@@ -1,0 +1,9 @@
+nav a {
+    display: block;
+    padding: 10px 10px;
+    background-color: rgb(24, 174, 24);
+}
+
+nav a:hover {
+    background-color: lightseagreen;
+}

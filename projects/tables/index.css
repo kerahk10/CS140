@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.Album thead {
+background-color: rgb(233, 176, 34);
+}
+
+.Album tbody {
+background-color: rgb(242, 128, 128);
+}
+
+.Album tbody tr:nth-chil {
+background-color: rgb(182, 45, 45);
+}

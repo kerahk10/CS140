@@ -13,3 +13,7 @@ background-color: rgb(242, 128, 128);
 .Album tbody tr:nth-chil {
 background-color: rgb(182, 45, 45);
 }
+
+.nav a {
+    color: brown;
+}

@@ -10,55 +10,92 @@
         <h1>Kerah's Web Design Class</h1>
     </header>
     <main>
-<form action="formprocessing.html" method="post">
+<form action="formprocessing.html" method="post" id="myForm"
+        <fieldset>
+            <legend>Account</legend>
     <div class="form-row">
-    <label for="personname">Full Name</label>
-    <input id="personname" type="text" name="fullname" placeholder="Full Name">
-    <div class="form-row">
+        <label for="fullname">Full Name</label>
+        <input id="fullname" type="text" name="fullname" placeholder="Full Name">
+    </div>
+    <div class="form-row"
     <label for="email">Email</label>
-    <input type="text" name="email">
+    <input type="email" name="email" id="email" value="kkahuena08@byuh.edu"
+    </div>
     <div class="form-row">
-    <label for="email">Email</label>
-    <input type="text" name="email">
+        <label for="bdate">Birthday</label>
+        <input type="date" name="bdate" id="bdate" 
+    </div>
       <div class="form-row">
-    <label for="user-age">Age:</label>
-     <input type="number" name="user-age" min="1" max="120">
-     <div>
-        <p>Select your favorite hobby:</p>
-    <input type="checkbox" id="coding" name="hobbies" value="coding" checked>
-    <label for="coding">Coding</label>
-      <input type="checkbox" id="music" name="hobbies" value="music">
-    <label for="music">Music</label>
-  </div>
+    <label for="password">Password:</label>
+     <input type="password" name="pass" id="password">
+      </div>
     <div class="form-row">
-    <input type="submit">
-</form>
+        <label for="state">State</label>
+        <select name="state" id="state">
+        <option value="blank">--------</option>
+        <option value="CA">California</option>
+        <option value="HI">Hawaii</option>
+        <option value="UT">Utah</option>
+    </select>
+    </div>
+    <div class="check-row"
+    <div class="spacer"></div>
+    <label><input type="checkbox" name="remeber"> Remember me?</label>
+    </div>
+    <div class="check-row"
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+    <div class="form-row">
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea>
+    </div>
+    <div class="form-row"
+    <div class="spacer"></div>
+    <input type="submit" value="Sign Up"
+    </div>
+        </fieldset>
+    </form>
 <h1>Question Answers</h1>
 <ol>
-    <li>The action attribute specifies the place where the data would be sent for processing when you click the submit button.</li>
-    <br>
-    <li>The method attribute specifies the HTTP method used to send form data to the server.</li>
-    <br>
-    <li> A GET is used to get data from a server, while a POST is used to send data to a server to create or update a resource.</li>
-    <br>
-    <li>a. A text box is a value text already entered into the box that the user can edit. The text disappears when the user starts typing.
-<br>
-    b. Textarea is a message already written in the larger text area. A placeholder is hint text that disappears when the user starts typing.
-<br>
-    c. Select box is an option  selected when the form loads. A placeholder is a prompt telling the user to choose an option.
-<br>
-    d. Checkbox means the checkbox is already ticked when the form loads. Checkboxes do not have placeholders.
-<br>
-    e. Radio button means one of the options are already selected when the form loads, they do not have placeholders.
-
-
-</li>
-    <br>
-    <li>The form controls that HTML5 added are color, date, email, month, number, range, search, tel, time, url, week, datetime-local, datalist, output, progress, meter, keygen. I used number and checkbox. </li>
+<li>JavaScript got its name from the company Netscape to join popularity of Sun Microsystems' Java programming language.</li>
+<li>Inside a web browser and outside the browser using a server-side runtime. </li>
+<li>JavaScript library made to simplify how developers interact with HTML documents, and getting data.</li>
+<li>React is the most popular JavaScript library today.</li>
+<li>Code prevents an HTML form from submitting by returning false via inline handlers.</li>
 </ol>
     </main>
     <footer>
         &copy; 2026 Kerah Kahuena
     </footer>
+    <script>
+            document.getElementById('myForm').addEventListener('submit',function(event) {
+                event.preventDefault();
+                //alert("Form Submitted");
+
+                const fullname = document.getElementById('fullname').value;
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('pass').value;
+                const age = document.getElementById('bdate').value;
+
+                If (fullname || !email) {
+                    alert("You need a name and email.");
+                return;
+                }
+                If (age || age <18) {
+                    alert("You need to be 18.");
+                return;
+                }
+
+                const formData = {
+                    name: fullname,
+                    email: email
+                    password: password,
+                    age: age
+                };
+
+                console.log(formData);
+            });
+    </script>
 </body>
 </html>

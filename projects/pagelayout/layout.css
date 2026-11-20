@@ -1,9 +1,62 @@
 nav a {
-    display: block;
-    padding: 10px 10px;
+    background-color: lightgreen;
+    color: rgb(0, 102, 174);
+    font-family: monospace;
+    font-size: xx-large;
+    font-weight: 300;
+    font-style: inherit;
+    line-height: 50px;
+    text-align: center;
+    height: 50px; width: 50px;
+     margin: 0px;
+     text-transform: none;
+
+     height: 70px; width: 70px;
+     margin: 10px;
+     padding: 10px 20px;
+     border: top 15px;
+     border-radius: 5px;
+     text-shadow: none;
     background-color: rgb(24, 174, 24);
+
 }
 
 nav a:hover {
     background-color: lightseagreen;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.pic1 {
+  float: left;              
+  margin-right: 25px;
+  margin-bottom: 10px;
+  max-width: 45%;
+  height: auto;
+}
+
+.para1 {
+font-family: monospace;  
+ margin-top: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.colored-box {
+background-color: rgb(24, 174, 24);
+  padding: 25px;
+  border-radius: 12px;
+  overflow: auto;
+  box-shadow: 0 4px 12px darkgreen;
 }
